@@ -11,7 +11,7 @@ from enum import Enum
 from discord import Webhook, RequestsWebhookAdapter
 
 
-CIRCL_LU_URL = "https://cve.circl.lu/api/query"
+CIRCL_LU_URL = "https://www.cvedetails.com/rss-feed/v1?feedId=3115&check=9a353e8ed6f5fbd931813ce38c9349473d2fc60c"
 CVES_JSON_PATH = join(pathlib.Path(__file__).parent.absolute(), "output/botpeas.json")
 LAST_NEW_CVE = datetime.datetime.now() - datetime.timedelta(days=1)
 LAST_MODIFIED_CVE = datetime.datetime.now() - datetime.timedelta(days=1)
